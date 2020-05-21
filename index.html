@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<body>
+    <ul id="tests-lists">
+    </ul>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+    <script type="text/javascript" >
+        var url = 'http://localhost:9081/tests';
+        axios.get(url).then(function(response) {
+            var items = response.data;
+            console.log('Data loaded..', items);
+            render(items); // QUAN TRỌNG ! 
+        });
+        // items lúc này k phải là string 
+        // khi gửi AJAX request => lấy data về item là 1 object chứ k phải là string
+        // nên ta phải item.content
+        function render(items) {
+            items = [
+                    { "id": 1, "name": "test1"},
+                     { "id": 2, "name": "test2"},
+                     { "id": 3, "name": "test3"}
+                    ];
+            var htmlList =document.getElementById('tests-lists');
+            var content = items.map(function(item) {
+                return '<li>' + item.content + '</li>';
+            });
+            htmlList.innerHTML = content.join('');
+        }
+    </script>
+</body>
+</html>
