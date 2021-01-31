@@ -1,4 +1,6 @@
-# web-cv
+# Thien Ngan CV
+
+Go to my world: https://nguyendacthienngan-ad3b3.web.app/
 
 ## Project setup
 ```
