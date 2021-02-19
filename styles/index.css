@@ -277,16 +277,19 @@ a.btn-main:hover span {
 
 @media (max-width: 1200px)
 {
+    /* .toggle-bar{
+        display: none;
+    } */
     /* Xem lai phan position absolute voi z-index tai  https://developer.mozilla.org/en-US/docs/Web/CSS/position*/
     .navigation-bar{
         position: absolute;
-        top: 17px;
+        top: 79px;
         left: 0;
         right: 0;
         width: 90%;
         margin: auto;
         background: rgba(255,255,255, 0.2);
-        backdrop-filter: blur(42px);
+        /* backdrop-filter: blur(42px); */
         border-radius: 10px;
         text-align: center;
         z-index: 2;
@@ -307,5 +310,12 @@ a.btn-main:hover span {
     .navigation-bar ul li.hire-btn a{
         background: #292523;
         color: #fff;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .navigation-bar {
+        display: block !important;
     }
 }

@@ -78,7 +78,11 @@
         </div>
     </div>
 </body>
+<script src="scripts/jquery.min.js"></script>
 <script>
-
+    $('.toggle-bar').on('click', function (event) {
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('200');
+    })
 </script>
 </html>
