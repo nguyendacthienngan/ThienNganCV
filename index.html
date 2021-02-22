@@ -25,7 +25,6 @@
                     <div class="navigation-bar">
                         <ul>
                             <li><a href="#">About</a></li>
-                            <li><a href="#">Services</a></li>
                             <li><a href="#">My work</a></li>
                             <li><a href="#">Blog</a></li>
                             <li class="hire-btn"><a href="#">Hire me</a></li>
@@ -46,31 +45,28 @@
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae, quisquam ullam suscipit quos placeat iusto nihil, nam rerum? Vel nesciunt iste cum vero aspernatur maxime quo itaque? Laboriosam nesciunt quasi vitae, quisquam ullam suscipit quos
                         </p>
                         <a href="#" class="btn-main">
-                            See my work
+                            Download my CV
                             <span><img src="assets/arrow-right.svg" alt="arrow"></span>
                         </a>
                     </div>
                     <div class="col-right">
-                        <img src="assets/john.svg" alt="Display image">
+                        <img src="assets/avatar.png" alt="Display image" width="300px" height="347px">
+                        <!-- <img src="assets/avatar.png" alt="Display image"> -->
                     </div>
                 </div>
                 <div class="experience-section">
                     <div class="experience-inner">
                         <div class="col">
-                            <h3>5 years</h3>
-                            <p>experience</p>
+                            <h3>Excellent</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae</p>
                         </div>
                         <div class="col">
-                            <h3>50+</h3>
-                            <p>Happy clients</p>
+                            <h3>8</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae</p>
                         </div>
                         <div class="col">
-                            <h3>120</h3>
-                            <p>Projects completed</p>
-                        </div>
-                        <div class="col">
-                            <h3>10</h3>
-                            <p>Award won</p>
+                            <h3>4</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitaed</p>
                         </div>
                     </div>
                 </div>
@@ -84,5 +80,21 @@
         $('this').toggleClass('open');
         $('.navigation-bar').slideToggle('200');
     })
+
+    var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (vw <= 1200) {
+    $('.navigation-bar').hide();
+    }
+
+    $(window).on('resize', function() {
+    vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if (vw <= 1200) {
+        $('.navigation-bar').hide();
+    }else{
+        $('.navigation-bar').show();
+    }
+    });
 </script>
 </html>
