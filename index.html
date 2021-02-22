@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
     <link rel="stylesheet" href="styles/index.css">
+    <!--using FontAwesome---------------->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <div class="portfolio-main">
@@ -27,7 +30,7 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">My work</a></li>
                             <li><a href="#">Blog</a></li>
-                            <li class="hire-btn"><a href="#">Hire me</a></li>
+                            <li class="hire-btn"><a href="#">Contact me</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -39,39 +42,49 @@
             <div class="container">
                 <div class="main-content-wrapper">
                     <div class="col-left">
-                        <span>Hi I am Thien Ngan</span>
-                        <h1> Web Developer</h1>
+                        <span>Hell, I am</span>
+                        <h1>Ngan Nguyen</h1>
                         <p>
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae, quisquam ullam suscipit quos placeat iusto nihil, nam rerum? Vel nesciunt iste cum vero aspernatur maxime quo itaque? Laboriosam nesciunt quasi vitae, quisquam ullam suscipit quos
+                            A junior student who is chasing web developer dreams including front-end and back-end.  
                         </p>
-                        <a href="#" class="btn-main">
+                        <!-- <button  type="submit" class="btn-main" onclick="window.open('./myCV/NguyenDacThienNgan-CV.pdf')">
+                            Download my CV
+                            <span><img src="assets/arrow-right.svg" alt="arrow"></span>
+                        </button> -->
+                        <a href="#" class="btn-main" id="btn-download">
                             Download my CV
                             <span><img src="assets/arrow-right.svg" alt="arrow"></span>
                         </a>
                     </div>
                     <div class="col-right">
-                        <img src="assets/avatar.png" alt="Display image" width="300px" height="347px">
-                        <!-- <img src="assets/avatar.png" alt="Display image"> -->
+                        <img src="assets/avatar.png" alt="Display image" width="300px" height="366px">
                     </div>
                 </div>
                 <div class="experience-section">
                     <div class="experience-inner">
-                        <div class="col">
-                            <h3>Excellent</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae</p>
+                        <div class="col col1">
+                            <h3>GPA 9.1</h3>
+                            <p>Achieved high scores in every major subjects</p>
+                        </div>
+                        <div class="col col1">
+                            <h3>IELTS 6.5</h3>
+                            <p>Have strong listening (7.5) - reading (6.5) skills. </p>
                         </div>
                         <div class="col">
-                            <h3>8</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitae</p>
-                        </div>
-                        <div class="col">
-                            <h3>4</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam nesciunt quasi vitaed</p>
+                            <h3>8 scholarships</h3>
+                            <p>Awards for who is one of <b>highest-ranked</b> students in University </p>
                         </div>
                     </div>
                 </div>
+                <div style="height: 50px"></div>
             </div>
         </div>
+    </div>
+    <!-- Attached social bar -->
+    <div class="att-social-bar">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
     </div>
 </body>
 <script src="scripts/jquery.min.js"></script>
@@ -95,6 +108,10 @@
     }else{
         $('.navigation-bar').show();
     }
+    });
+
+    $('#btn-download').click(function(){
+        window.open('./myCV/NguyenDacThienNgan-CV.pdf')
     });
 </script>
 </html>
