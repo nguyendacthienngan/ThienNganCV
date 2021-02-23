@@ -381,7 +381,12 @@ a.btn-main:hover span {
     display: grid;
     grid-gap: 50px;
     grid-template-columns: auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
 }
+
+@media (max-width: 828px) {
+    .projects { grid-template-columns: repeat(1, 1fr); }
+  }
 
 .project {
     background: rgba(255,255,255, 0.2);
@@ -440,3 +445,10 @@ a.btn-main:hover span {
   .card-btn:hover span, .card-btn:acti  ve span {
     margin-left: 1.5rem;
   }
+
+  @media (max-width: 828px) {
+    .grid {
+        grid-template-columns: auto;
+      }
+  }
+
