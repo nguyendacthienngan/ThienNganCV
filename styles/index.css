@@ -434,6 +434,31 @@ a.btn-main:hover span {
     transition: 0.2s;
     cursor: pointer;
   }
+
+  .disable {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size:16px;
+    text-align: center;
+    color: #fff;
+    background-color: grey;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+  }
+  .disable span {
+    margin-left: 1rem;
+    transition: 0.2s;
+  }
+  .disable:hover{
+    color: #fff;
+    background-color: grey;
+  }
+  .card-disable:hover span{
+    margin-left: 1.5rem;
+  }
   .card-btn span {
     margin-left: 1rem;
     transition: 0.2s;
@@ -442,7 +467,7 @@ a.btn-main:hover span {
     background-color: #292523;
     color: #fff;
   }
-  .card-btn:hover span, .card-btn:acti  ve span {
+  .card-btn:hover span, .card-btn:active span {
     margin-left: 1.5rem;
   }
 

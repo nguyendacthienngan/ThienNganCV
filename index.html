@@ -99,8 +99,8 @@
                                     <span class="dot" onclick="currentSlide(this, 3)"></span>
                                   </div>
                                 <div class="card-content">
-                                  <h1 class="card-header">A starry night</h1>
-                                  <p class="card-text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
+                                  <h1 class="card-header">Restaurant Management App</h1>
+                                  <p class="card-text">A desktop application which provides a full features for managing restaurant such as ordering tables / foods, payment method, monthly report, managing employees </p>
                                   <button class="card-btn">Explore <span>&rarr;</span></button>
                                 </div>
                             </div>
@@ -129,8 +129,8 @@
                                     <span class="dot" onclick="currentSlide(this, 3)"></span>
                                   </div>
                                 <div class="card-content">
-                                  <h1 class="card-header">A starry night</h1>
-                                  <p class="card-text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
+                                  <h1 class="card-header">Human Resource Support Mobile App</h1>
+                                  <p class="card-text">A mobile app which use for people in company communicating to their own managers such as register time-off, meeting, events </p>
                                   <button class="card-btn">Explore <span>&rarr;</span></button>
                                 </div>
                             </div>
@@ -159,8 +159,8 @@
                                     <span class="dot" onclick="currentSlide(this, 3)"></span>
                                   </div>
                                 <div class="card-content">
-                                  <h1 class="card-header">A starry night</h1>
-                                  <p class="card-text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
+                                  <h1 class="card-header">Bookstore Management App</h1>
+                                  <p class="card-text">An desktop app using for managing books, employees, recipients,.. </p>
                                   <button class="card-btn">Explore <span>&rarr;</span></button>
                                 </div>
                             </div>
@@ -189,9 +189,10 @@
                                     <span class="dot" onclick="currentSlide(this, 3)"></span>
                                   </div>
                                 <div class="card-content">
-                                  <h1 class="card-header">A starry night</h1>
-                                  <p class="card-text">Look up at the night sky, and find yourself <strong>immersed</strong> in the amazing mountain range of Aspen. </p>
-                                  <button class="card-btn">Explore <span>&rarr;</span></button>
+                                  <h1 class="card-header">Picture Editing Mobile App</h1>
+                                  <p class="card-text">Coming soon... </p>
+                                  <br>
+                                  <button class=" disable">Explore <span>&rarr;</span></button>
                                 </div>
                             </div>
                         </div>
@@ -210,29 +211,9 @@
     </div>
 </body>
 <script src="scripts/jquery.min.js"></script>
-<script src="scripts/index.js"></script>
+<script src="scripts/sliders.js"></script>
+<script src="scripts/navigation-bar.js"></script>
 <script>
-    $('.toggle-bar').on('click', function (event) {
-        $('this').toggleClass('open');
-        $('.navigation-bar').slideToggle('200');
-    })
-
-    var vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-    if (vw <= 1200) {
-    $('.navigation-bar').hide();
-    }
-
-    $(window).on('resize', function() {
-    vw = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-    if (vw <= 1200) {
-        $('.navigation-bar').hide();
-    }else{
-        $('.navigation-bar').show();
-    }
-    });
-
     $('#btn-download').click(function(){
         window.open('./myCV/NguyenDacThienNgan-CV.pdf')
     });
